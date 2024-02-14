@@ -16,6 +16,12 @@ class UserController extends Controller
     // }
     public function show($id)
     {
-        return $id;
+        $data=array(
+            "id"=> $id,
+            "name"=> "jason",
+            "age"=> 21,
+            "year"=> 2024
+        );
+        return Controllers('UserController',[$data=>$data]);
     }
 }
